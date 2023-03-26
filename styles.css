@@ -1,0 +1,131 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+
+  @keyframes bg-color {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+  
+  #container {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    
+    border: 5px solid;
+    border-image: linear-gradient(to bottom, #1c0303, #000) 1;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #container:hover{
+
+    cursor:pointer;
+
+  }
+  
+
+h1{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 50px;
+}
+
+
+  .grid-item {
+    padding: 0em;
+    border: 1px solid #AAAA;
+    text-align: center;
+  }
+
+
+   
+
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDDDDD;
+  }
+
+  .midbody{
+
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .leftSide{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   padding-right: 100px;
+   padding-left: 100px;
+   
+
+  }
+
+.firstB{
+
+    padding:15%;
+    margin: 15%;
+    height: 50px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-family:"Brush Script MT", cursive;
+    font-size: medium;
+}  
+
+.BottomButtons{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+
+.secondB{
+
+    padding:15%;
+    margin: 15%;
+    height: 50px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: "Brush Script MT", cursive;
+    font-size: medium;
+
+}
+
+button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+  }
+
+  button:active {
+    background-color: #00308F;
+    box-shadow: none;
+  }
